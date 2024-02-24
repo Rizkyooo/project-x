@@ -22,7 +22,7 @@ export default function Hero(){
             <div className="w-full h-full grid-rows-2 md:grid-cols-2">
                 <div className="bg-[#967E76] h-2/5">
                     <div className="w-full h-full flex justify-center items-center">
-                        <Image width={360} height={360} src="/images/hero1.png" alt="hero" className="mt-4"/>
+                        <Image width={360} height={360} src="/images/herox.png" alt="hero" className="mt-4"/>
                     </div>
                 </div>
                 <div className="h-3/5 flex flex-col ">
