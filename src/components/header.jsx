@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +66,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/#templateDesain"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-[#967E76] md:hover:bg-transparent md:border-0 md:hover:text-[#967E76] md:p-0"
                 >
                   Desain/Template
@@ -73,10 +74,10 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/#fitur"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-[#967E76] md:hover:bg-transparent md:border-0 md:hover:text-[#967E76] md:p-0"
                 >
-                  Contact
+                  Fitur
                 </a>
               </li>
               <li>
@@ -84,7 +85,7 @@ export default function Header() {
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-[#967E76] md:hover:bg-transparent md:border-0  md:hover:text-[#967E76] md:p-0"
                 >
-                  About
+                  Contact
                 </a>
               </li>
             </ul>

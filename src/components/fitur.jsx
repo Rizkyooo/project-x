@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Fitur() {
   return (
-    <div className="min-h-screen">
+    <div id="fitur" className="min-h-screen">
       <div className=" flex justify-center ">
         <h3 className="text-2xl font-bold text-gray-800 mr-4">
           Fitur Lengkap

@@ -2,6 +2,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import Image from "next/image";
+import { redirect } from "next/dist/server/api-utils";
 
 export default function Hero(){
     const controls = useAnimation();
@@ -28,7 +29,10 @@ export default function Hero(){
                 <div className="h-3/5 flex flex-col ">
                     <h3 className="text-3xl font-bold text-gray-800 ml-4 mt-4">Buat Undangan Nikah Digital Dengan Desain Terbaik!</h3>
                     <p className="text-sm mt-2 ml-4 justify-start">Biarkan undangan pernikahan Anda berbicara sendiri dengan desain-desain kreatif dan inovatif dari tim kami. Dari gaya klasik hingga modern, kami memiliki berbagai opsi untuk mencerminkan kepribadian dan cerita cinta Anda dengan indah.</p>
-                    <motion.button
+                    <motion.button 
+                        onClick={()=>{
+                            window.location.href = "/#templateDesain"
+                        }}
                         animate={controls}
                         className="bg-[#967E76] text-white p-4 mt-4 ml-4 rounded-md w-3/6"
                     >
