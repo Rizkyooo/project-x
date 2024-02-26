@@ -1,15 +1,23 @@
-'use client'
 import { Button } from "@material-tailwind/react";
- import Aos from "aos";
+import Aos from "aos";
 import "aos/dist/aos.css";
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
+import { Suspense } from "react"; // Import Suspense
 
 export default function Cover({toggleOpen}) {
   useEffect(() => {
     Aos.init()
   },[])
 
+  return (
+    <Suspense fallback={<div>Loading...</div>}> {/* Wrap your component with Suspense */}
+      <CoverContent toggleOpen={toggleOpen} />
+    </Suspense>
+  );
+}
+
+function CoverContent({ toggleOpen }) {
   const searchParams = useSearchParams();
   const tamu = searchParams.get("tamu");
   return (
@@ -23,16 +31,16 @@ export default function Cover({toggleOpen}) {
         <h2>Juliet</h2>
       </div>
 
-      <div data-aos="fade-right"
-     data-aos-delay="1500" className=" mt-9 text-md flex flex-col justify-center items-center text-[#D6CDB5]">
+      <div data-aos="fade-right" data-aos-delay="1500" className=" mt-9 text-md flex flex-col justify-center items-center text-[#D6CDB5]">
         <h4>Dear, </h4>
-        <h4>{tamu||"bapak/ibu"}</h4>
+        <h4>{tamu || "bapak/ibu"}</h4>
       </div>
 
       <h4 data-aos="fade-right" data-aos-delay="2000" className="mt-6 text-sm text-[#D6CDB5]">Kamis, 8 Oktomber 2025</h4>
-      <Button data-aos="zoom-out-down"
-     data-aos-anchor-placement="top-bottom"
-     data-aos-delay="3000"
+      <Button
+        data-aos="zoom-out-down"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="3000"
         onClick={toggleOpen}
         size="md"
         variant="gradient"
