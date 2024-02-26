@@ -26,7 +26,7 @@ export default function Fitur() {
               />
             </svg>
 
-            <p className=" text-xl">Masa aktif 1 tahun</p>
+            <p className=" text-md">Masa aktif 1 tahun</p>
           </div>
 
           <div className="flex items-center mt-2">
@@ -44,7 +44,7 @@ export default function Fitur() {
               />
             </svg>
 
-            <p className=" text-xl">Sebar undangan sepuasnya</p>
+            <p className=" text-md">Sebar undangan sepuasnya</p>
           </div>
 
           <div className="flex items-center mt-2">
@@ -61,7 +61,7 @@ export default function Fitur() {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className=" text-xl">Revisi tanpa batas</p>
+            <p className=" text-md">Revisi tanpa batas</p>
           </div>
 
           <div className="flex items-center mt-2">
@@ -78,7 +78,7 @@ export default function Fitur() {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className=" text-xl">Custom nama tamu</p>
+            <p className=" text-md">Custom nama tamu</p>
           </div>
 
           <div className="flex items-center mt-2">
@@ -95,7 +95,7 @@ export default function Fitur() {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className=" text-xl">Konfirmasi Kehadiran & Ucapan</p>
+            <p className=" text-md">Konfirmasi Kehadiran & Ucapan</p>
           </div>
 
           <div className="flex items-center mt-2">
@@ -112,7 +112,7 @@ export default function Fitur() {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className=" text-xl">Bebas custom backsound</p>
+            <p className=" text-md">Bebas custom backsound</p>
           </div>
 
           <div className="flex items-center mt-2">
@@ -129,7 +129,7 @@ export default function Fitur() {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className=" text-xl">Amplop Digital & Gift</p>
+            <p className=" text-md">Amplop Digital & Gift</p>
           </div>
 
           <div className="flex items-center mt-2">
@@ -146,7 +146,7 @@ export default function Fitur() {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className=" text-xl">Galeri & Video Prewedding</p>
+            <p className=" text-md">Galeri & Video Prewedding</p>
           </div>
           <div className="flex items-center mt-2">
             <svg
@@ -162,7 +162,7 @@ export default function Fitur() {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className=" text-xl">Love Story</p>
+            <p className=" text-md">Love Story</p>
           </div>
           <div className="flex items-center mt-2">
             <svg
@@ -178,25 +178,25 @@ export default function Fitur() {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className=" text-xl">Dan lain-lain</p>
+            <p className=" text-md">Dan lain-lain</p>
           </div>
         </div>
         <div className="p-4 mt-4">
             <div className="grid grid-cols-3">
                 <div className="flex flex-col justify-center items-center">
                 <Image height={80} width={80} src="/images/mudah.png"></Image>
-                <h5 className="text-2xl font-bold">Mudah</h5>
+                <h5 className="text-xl font-bold">Mudah</h5>
                 </div>
                 
                 <div className="flex flex-col justify-center items-center">
                 <Image height={80} width={80} src="/images/affordable.png"></Image>
-                <h5 className="text-2xl font-bold">Murah</h5>
+                <h5 className="text-xl font-bold">Murah</h5>
                 </div>
 
 
                 <div className="flex flex-col justify-center items-center">
                 <Image height={80} width={80} src="/images/cepat.png"></Image>
-                <h5 className="text-2xl font-bold">Cepat</h5>
+                <h5 className="text-xl font-bold">Cepat</h5>
                 </div>
             </div>
         </div>

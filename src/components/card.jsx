@@ -23,31 +23,33 @@ export function CardDesain() {
       </CardHeader>
       <CardBody className="w-full">
         <div className="mb-2 flex items-center justify-between">
-          <Typography variant="h4" color="blue-gray" className="font-bold">
+          <Typography variant="h5" color="blue-gray" className="font-bold">
             Premium Desain 01
           </Typography>
         </div>
         <Typography
-          variant="h5"
+          variant="h6"
           color="blue-gray"
           className="line-through text-red-500 mb-2"
         >
           Rp. 180K
         </Typography>
-        <Typography variant="h5" color="blue-gray" className="font-bold">
+        <Typography variant="h6" color="blue-gray" className="font-bold">
           Rp. 125K
         </Typography>
       </CardBody>
       <CardFooter className="grid grid-cols-2 gap-4">
         <Button
           className=" flex items-center justify-center bg-[#967E76]"
-          size="lg"
+          size="xs"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-6 h-6"
+            width={20}
+            height={20}
+            className="mr-2"
           >
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
             <path
@@ -60,15 +62,17 @@ export function CardDesain() {
         </Button>
         <Button
           className="flex items-center justify-center bg-[#967E76]"
-          size="lg"
+          size="xs"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="30"
-            height="30"
+            width="20"
+            height="20"
             viewBox="0 0 48 48"
+
+            className="mr-2"
           >
             <path
               fill="#fff"

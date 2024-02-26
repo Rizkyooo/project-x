@@ -34,7 +34,7 @@ export default function Hero(){
                             window.location.href = "/#templateDesain"
                         }}
                         animate={controls}
-                        className="bg-[#967E76] text-white p-4 mt-4 ml-4 rounded-md w-3/6"
+                        className="bg-[#967E76] text-white py-2 mt-4 ml-4 rounded-md w-3/6"
                     >
                         Buat Undangan 
                     </motion.button>
