@@ -13,13 +13,13 @@ export default function Fitur() {
         <div className="shadow-md h-full w-full rounded-2xl bg-white p-4">
           <div className="flex items-center ">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -31,13 +31,13 @@ export default function Fitur() {
 
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -49,13 +49,13 @@ export default function Fitur() {
 
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -66,13 +66,13 @@ export default function Fitur() {
 
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -83,13 +83,13 @@ export default function Fitur() {
 
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -100,13 +100,13 @@ export default function Fitur() {
 
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -117,13 +117,13 @@ export default function Fitur() {
 
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -134,13 +134,13 @@ export default function Fitur() {
 
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -150,13 +150,13 @@ export default function Fitur() {
           </div>
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
@@ -166,13 +166,13 @@ export default function Fitur() {
           </div>
           <div className="flex items-center mt-2">
             <svg
-              class="h-8 w-8 text-green-500 mr-1"
+              className="h-8 w-8 text-green-500 mr-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"

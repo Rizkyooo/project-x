@@ -1,18 +1,23 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import MainContent from "./mainContent";
 import Cover from "./cover";
 export default function PremiumSatuDesain() {
   const [isOpen, setIsOpen] = useState(true);
+  useEffect(() => {
+    Aos.init({duration:1000})
+  }, [])
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
   return (
     <div
-    
-     class="max-w-md w-full bg-[#314361] min-h-screen">
+    data-aos="flip-left"
+     className="max-w-md w-full bg-[#314361] min-h-screen">
       {isOpen ? <Cover toggleOpen={toggleOpen}></Cover> : <MainContent></MainContent>}
     </div>
   );

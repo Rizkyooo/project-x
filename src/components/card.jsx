@@ -1,4 +1,7 @@
 "use client";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import {
   Card,
   CardHeader,
@@ -9,11 +12,13 @@ import {
   Tooltip,
   IconButton,
 } from "@material-tailwind/react";
-import Link from "next/link";
 
 export function CardDesain() {
+  useEffect(() => {
+    Aos.init({delay:100})
+  }, [])
   return (
-    <Card className="w-full max-w-[26rem] shadow-2xl mb-4">
+    <Card data-aos="zoom-out-right" className="w-full max-w-[26rem] shadow-2xl mb-4">
       <CardHeader floated={false} color="blue-gray">
         <img
           className="h-60 w-full object-cover"
