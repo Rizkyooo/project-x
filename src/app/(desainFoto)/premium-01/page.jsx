@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import MainContent from "./mainContent";
 import Cover from "./cover";
- function PremiumSatuDesain() {
+export default function PremiumSatuDesain() {
   const [isOpen, setIsOpen] = useState(true);
   useEffect(() => {
     Aos.init({duration:1000})
