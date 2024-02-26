@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Countdown from "react-countdown";
 export default function MainContent() {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -30,27 +31,29 @@ export default function MainContent() {
         style={{ backgroundImage: `url('/images/desain01bg.png')` }}
         className=" min-h-screen bg-center flex items-center justify-center flex-col"
       >
-        <h4 className=" mb-16 text-[#D6CDB5]">The Wedding of</h4>
+        <h4 data-aos="fade-right" className=" mb-16 text-[#D6CDB5]">The Wedding of</h4>
         <div
-          data-aos="zoom-in"
-          data-aos-delay="1000"
+          data-aos="fade-up"
+          
           className="flex flex-col justify-center items-center text-3xl font-spring  text-[#D6CDB5]"
         >
           <h2>Romeo</h2>
           <h2 className="my-2">&</h2>
           <h2>Juliet</h2>
         </div>
-        <p className="p-9 mt-6 text-[#D6CDB5] text-[12px] text-center">
+        <p data-aos="zoom-in" className="p-9 mt-6 text-[#D6CDB5] text-[12px] text-center">
           Kami berharap Anda menjadi bagian dari hari istimewa kami!
         </p>
-        <div className="text-[#314361] text-sm font-bold">
+        <div data-aos="fade-right" className="text-[#314361] text-sm font-bold">
           <Countdown
             date={new Date("2024-02-28T00:00:00")}
             renderer={renderer}
           ></Countdown>
         </div>
-        <h4 data-aos="fade-right" data-aos-delay="2000" className="mt-6 text-sm text-[#D6CDB5]">Kamis, 8 Oktomber 2025</h4>
-        <button className="bg-[#D6CDB5] text-[#314361] px-4 py-1 mt-4 rounded-md font-bold">Save The Date</button>
+        <h4 data-aos="fade-right"className="mt-6 text-sm text-[#D6CDB5]">Kamis, 8 Oktomber 2025</h4>
+        <Link data-aos="fade-right" href={'#'}>
+        <button className="bg-[#D6CDB5] text-[#314361] px-4 py-1 mt-4 rounded-md font-bold" >Save The Date</button>
+        </Link>
         <div className=" mt-12 animate-bounce ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
