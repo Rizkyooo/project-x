@@ -55,7 +55,7 @@ export default function Header() {
               <li>
                 <a
                   href="/#home"
-                  className="block py-2 px-3 bg-amber-50 hover:bg-[#967E76] rounded md:bg-transparent md:text-[#967E76] md:p-0 md:hover:bg-white "
+                  className="block py-2 px-3  hover:bg-[#967E76] rounded md:bg-transparent md:text-[#967E76] md:p-0 md:hover:bg-white "
                   aria-current="page"
                 >
                   Home

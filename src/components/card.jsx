@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import {
   Card,
   CardHeader,
@@ -10,6 +9,7 @@ import {
   Tooltip,
   IconButton,
 } from "@material-tailwind/react";
+import Link from "next/link";
 
 export function CardDesain() {
   return (
@@ -42,6 +42,9 @@ export function CardDesain() {
         <Button
           className=" flex items-center justify-center bg-[#967E76]"
           size="xs"
+          onClick={() => {
+            window.location.href = "/premium-01";
+          }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
