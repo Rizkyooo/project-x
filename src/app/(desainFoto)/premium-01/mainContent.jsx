@@ -1,5 +1,4 @@
 import Countdown from "react-countdown";
-import { Button } from "@material-tailwind/react";
 export default function MainContent() {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
