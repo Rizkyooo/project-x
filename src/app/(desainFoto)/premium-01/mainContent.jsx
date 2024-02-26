@@ -1,4 +1,5 @@
 import Countdown from "react-countdown";
+import { Button } from "@material-tailwind/react";
 export default function MainContent() {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -49,6 +50,8 @@ export default function MainContent() {
             renderer={renderer}
           ></Countdown>
         </div>
+        <h4 data-aos="fade-right" data-aos-delay="2000" className="mt-6 text-sm text-[#D6CDB5]">Kamis, 8 Oktomber 2025</h4>
+        <button className="bg-[#D6CDB5] text-[#314361] px-4 py-1 mt-4 rounded-md font-bold">Save The Date</button>
         <div className=" mt-12 animate-bounce ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
