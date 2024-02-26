@@ -8,16 +8,16 @@ export default function MainContent() {
       // Tampilkan countdown
       return (
         <div className="countdown flex gap-2">
-          <div className="px-4 h-10 w-18 bg-[#D6CDB5] flex items-center justify-center rounded-full">
+          <div className=" px-1 h-10 w-20 bg-[#D6CDB5] flex items-center justify-center rounded-xl">
             {days} Hari
           </div>
-          <div className="px-4 h-10 w-18 bg-[#D6CDB5] flex items-center justify-center rounded-full">
+          <div className="px-1 h-10 w-20 bg-[#D6CDB5] flex items-center justify-center rounded-xl">
             {hours} Jam
           </div>
-          <div className="px-4 h-10 w-18 bg-[#D6CDB5] flex items-center justify-center rounded-full">
+          <div className="px-1 h-10 w-20 bg-[#D6CDB5] flex items-center justify-center rounded-xl">
             {minutes} Menit
           </div>
-          <div className="px-4 h-10 w-18 bg-[#D6CDB5] flex items-center justify-center rounded-full">
+          <div className="px-1 h-10 w-20 bg-[#D6CDB5] flex items-center justify-center rounded-xl">
             {seconds} Detik
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function MainContent() {
         <p className="p-9 mt-6 text-[#D6CDB5] text-[12px] text-center">
           Kami berharap Anda menjadi bagian dari hari istimewa kami!
         </p>
-        <div className="text-[#314361] text-md font-bold">
+        <div className="text-[#314361] text-sm font-bold">
           <Countdown
             date={new Date("2024-02-28T00:00:00")}
             renderer={renderer}
