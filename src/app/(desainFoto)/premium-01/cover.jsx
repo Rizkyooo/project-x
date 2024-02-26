@@ -2,12 +2,16 @@
 import { Button } from "@material-tailwind/react";
  import Aos from "aos";
 import "aos/dist/aos.css";
+import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Cover({toggleOpen}) {
   useEffect(() => {
     Aos.init()
   },[])
+
+  const searchParams = useSearchParams();
+  const tamu = searchParams.get("tamu");
   return (
     <div 
       style={{ backgroundImage: `url('/images/desain01bg.png')` }}
@@ -20,12 +24,12 @@ export default function Cover({toggleOpen}) {
       </div>
 
       <div data-aos="fade-right"
-     data-aos-delay="1500" className=" mt-9 text-xl flex flex-col justify-center items-center text-[#D6CDB5]">
+     data-aos-delay="1500" className=" mt-9 text-md flex flex-col justify-center items-center text-[#D6CDB5]">
         <h4>Dear, </h4>
-        <h4>"Nama Tamu"</h4>
+        <h4>{tamu||"bapak/ibu"}</h4>
       </div>
 
-      <h4 data-aos="fade-right" data-aos-delay="2000" className="mt-6 text-md text-[#D6CDB5]">Kamis, 8 Oktomber 2025</h4>
+      <h4 data-aos="fade-right" data-aos-delay="2000" className="mt-6 text-sm text-[#D6CDB5]">Kamis, 8 Oktomber 2025</h4>
       <Button data-aos="zoom-out-down"
      data-aos-anchor-placement="top-bottom"
      data-aos-delay="3000"
