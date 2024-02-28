@@ -23,7 +23,7 @@ export function WeddingGift() {
       setCopiedFunction(true);
       setTimeout(() => {
         setCopiedFunction(false);
-      }, 2000);
+      }, 1000);
     } catch (err) {
       console.error('Failed to copy:', err);
     }
@@ -101,7 +101,7 @@ export function WeddingGift() {
                   color="blue-gray"
                   variant="h6"
                 >
-                  0660580697 <IconButton onClick={() => copyToClipboard('0660580697', setCopiedCoinbase)} className="bg-[#314361]" size="sm"> {copiedCoinbase ? <CheckIcon height={20}/> : <DocumentDuplicateIcon height={20}/>}</IconButton>
+                  0660580697 <IconButton onClick={() => copyToClipboard('0660580697', setCopiedTrustWallet)} className="bg-[#314361]" size="sm"> {copiedTrustWallet ? <CheckIcon height={20}/> : <DocumentDuplicateIcon height={20}/>}</IconButton>
                 </Typography>
               </MenuItem>
             </ul>
