@@ -3,6 +3,10 @@ import Countdown from "react-countdown";
 import Image from "next/image";
 import { Fragment } from "react";
 import BottomNav from "@/components/bottomNav";
+import { LoveStory } from "@/components/loveStory";
+import { WeddingGift } from "@/components/weddingGift";
+import Kehadiran from "@/components/kehadiran";
+import Maps from "@/components/maps";
 export default function MainContent() {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -115,12 +119,14 @@ export default function MainContent() {
             height={200}
           />
         </div>
-        <div className="h-screen mt-20">
-          <h4></h4>
-          <p className=" mx-4  text-xs text-[#D6CDB5] text-center">
+        <div className=" mt-20">
+          <p className=" mx-4 mb-4  text-xs text-[#D6CDB5] text-center">
             Maha suci Allah yang telah menciptakan mahluk-Nya
             berpasang-pasangan. Ya Allah rahmatilah pernikahan kami :
           </p>
+          <h4 className="mx-4  text-xl text-[#D6CDB5] text-center ">
+            The Wedding of
+          </h4>
           <h4 className="mt-20 mx-4  text-3xl text-[#D6CDB5] text-center font-spring">
             Romeo
           </h4>
@@ -142,6 +148,84 @@ export default function MainContent() {
           <p className=" mt-2 mx-4  text-sm text-[#D6CDB5] text-center">
             Bapak M. Husnaidi, S. Sos. & Ibu Sohriah
           </p>
+        </div>
+
+        <div className="mt-24 flex flex-col justify-center items-center">
+          <h4 className="mx-4  text-3xl text-[#D6CDB5] text-center">
+            Our Love Story
+          </h4>
+          <div className="mt-6 ">
+            <LoveStory></LoveStory>
+          </div>
+        </div>
+
+        <div className="mt-16 flex justify-center items-center flex-col">
+          <h4 className="mx-4  text-3xl text-[#D6CDB5] text-center">
+            Save The Date
+          </h4>
+          <div className="mt-4 flex flex-col justify-center items-center">
+            <h4 className="mx-4 text-[10px] mb-6 text-[#D6CDB5]  text-center">
+              Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
+              serta Kerabat sekalian untuk menghadiri acara pernikahan kami:
+            </h4>
+            <Countdown
+              date={new Date("2024-02-29T00:00:00")}
+              renderer={renderer}
+            ></Countdown>
+            <h4 className="mt-4 text-md text-[#D6CDB5]">
+              Kamis, 8 Oktomber 2025
+            </h4>
+          </div>
+
+          <div className="mt-16 flex justify-center items-center flex-col">
+            <h4 className=" mx-4 text-2xl text-[#D6CDB5] text-center font-spring text">
+              Akad
+            </h4>
+            <h4 className="mt-6 text-sm text-[#D6CDB5]">
+              Kamis, 8 Oktomber 2025
+            </h4>
+            <h4 className="mt-2 text-sm text-[#D6CDB5]">
+              pukul 09:00 WIB - selesai
+            </h4>
+            <h4 className="mt-2 mx-4 text-sm text-[#D6CDB5] text-center">
+              Plataran Menteng, Jalan HOS. Cokroaminoto, RT.6/RW.4, Gondangdia,
+              Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, Indonesia
+            </h4>
+          </div>
+
+          <div className="mt-16 flex justify-center items-center flex-col">
+            <h4 className=" mx-4 text-2xl text-[#D6CDB5] text-center font-spring text">
+              Resepsi
+            </h4>
+            <h4 className="mt-6 text-sm text-[#D6CDB5]">
+              Kamis, 8 Oktomber 2025
+            </h4>
+            <h4 className="mt-2 text-sm text-[#D6CDB5]">
+              pukul 09:00 WIB - selesai
+            </h4>
+            <h4 className="mt-2 mx-4 text-sm text-[#D6CDB5] text-center">
+              Plataran Menteng, Jalan HOS. Cokroaminoto, RT.6/RW.4, Gondangdia,
+              Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, Indonesia
+            </h4>
+          </div>
+          <div className="mt-9">
+            <Maps></Maps>
+          </div>
+        </div>
+
+        <div className="mt-20 flex flex-col justify-center items-center">
+          <h4 className=" mx-4 mb-2 text-3xl text-[#D6CDB5] text-center ">
+            Wedding Gift
+          </h4>
+          <h4 className="mt-2 mb-4 text-[10px] mx-6 text-[#D6CDB5] text-center">
+            Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan
+            jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi
+            kado secara cashless.
+          </h4>
+          <WeddingGift></WeddingGift>
+          <div className="flex justify-center items-center mt-20">
+            <Kehadiran></Kehadiran>
+          </div>
         </div>
         <BottomNav></BottomNav>
       </div>
