@@ -16,8 +16,7 @@ export default function PremiumSatuDesain() {
   };
   return (
     <div
-    data-aos="flip-left"
-     className="max-w-md mx-auto bg-[#314361] min-h-screen">
+    >
       {isOpen ? <Cover toggleOpen={toggleOpen}></Cover> : <MainContent></MainContent>}
     </div>
   );

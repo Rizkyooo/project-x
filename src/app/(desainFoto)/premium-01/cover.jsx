@@ -21,9 +21,10 @@ function CoverContent({ toggleOpen }) {
   const searchParams = useSearchParams();
   const tamu = searchParams.get("tamu");
   return (
-    <div 
+    <div className="max-w-md mx-auto bg-[#314361] min-h-screen">
+<div 
       style={{ backgroundImage: `url('/images/desain01bg.png')` }}
-      className=" min-h-screen bg-center flex items-center justify-center flex-col"
+      className=" min-h-screen  bg-center flex items-center justify-center flex-col"
     >
       <div data-aos="zoom-in" data-aos-delay="1000" className="flex flex-col justify-center items-center text-4xl font-spring  text-[#D6CDB5]">
         <h2>Romeo</h2>
@@ -49,5 +50,7 @@ function CoverContent({ toggleOpen }) {
         Buka Undangan
       </Button>
     </div>
+    </div>
+    
   );
 }
