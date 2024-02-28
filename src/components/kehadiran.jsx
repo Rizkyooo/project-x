@@ -22,7 +22,7 @@ export default function Kehadiran() {
   const [formData, setFormData] = useState({
     nama: "",
     ucapan: "",
-    konfirmasi: ""
+    konfirmasi: "ya"
   });
   const [ucapanList, setUcapanList] = useState([]);
 
@@ -42,14 +42,14 @@ export default function Kehadiran() {
     setFormData({
       nama: "",
       ucapan: "",
-      konfirmasi: "",
+      konfirmasi: "ya",
     });
     setOpen(false);
   };
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h3 className="mb-4 mx-4 text-2xl text-[#D6CDB5] text-center">Kehadiran</h3>
+      <h3 className="mb-4 mx-4 text-3xl text-[#D6CDB5] text-center">Kehadiran</h3>
       <h4 className="mb-6 mt-2 mx-4 text-sm text-[#D6CDB5] text-center">
         Kehadiran dan Ucapan Anda Sangat Berarti Bagi Kami
       </h4>
@@ -87,7 +87,7 @@ export default function Kehadiran() {
           </div>
           <div className="flex flex-col gap-2 ">
             
-            <Radio size={20} name="konfirmasi" label="Ya, Saya Akan Hadir" onChange={handleChange} value="ya" checked={formData.konfirmasi === "" || formData.konfirmasi === "ya"}/>
+            <Radio size={20} name="konfirmasi" label="Ya, Saya Akan Hadir" onChange={handleChange} value="ya" defaultChecked={'ya'}/>
             <Radio size={20} name="konfirmasi" label="Tidak, Saya Tidak Bisa Hadir" onChange={handleChange} value="tidak" />
           </div>
         </DialogBody>

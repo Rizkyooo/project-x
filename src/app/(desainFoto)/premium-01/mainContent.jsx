@@ -66,7 +66,7 @@ export default function MainContent() {
             className="text-[#314361] text-sm font-bold"
           >
             <Countdown
-              date={new Date("2024-02-29T00:00:00")}
+              date={new Date("2025-02-29T00:00:00")}
               renderer={renderer}
             ></Countdown>
           </div>
@@ -170,7 +170,7 @@ export default function MainContent() {
               serta Kerabat sekalian untuk menghadiri acara pernikahan kami:
             </h4>
             <Countdown
-              date={new Date("2024-02-29T00:00:00")}
+              date={new Date("2025-02-29T00:00:00")}
               renderer={renderer}
             ></Countdown>
             <h4 className="mt-4 text-md text-[#D6CDB5]">
@@ -179,7 +179,7 @@ export default function MainContent() {
           </div>
 
           <div className="mt-16 flex justify-center items-center flex-col">
-            <h4 className=" mx-4 text-2xl text-[#D6CDB5] text-center font-spring text">
+            <h4 className=" mx-4 text-3xl text-[#D6CDB5] text-center font-spring text">
               Akad
             </h4>
             <h4 className="mt-6 text-sm text-[#D6CDB5]">
@@ -195,7 +195,7 @@ export default function MainContent() {
           </div>
 
           <div className="mt-16 flex justify-center items-center flex-col">
-            <h4 className=" mx-4 text-2xl text-[#D6CDB5] text-center font-spring text">
+            <h4 className=" mx-4 text-3xl text-[#D6CDB5] text-center font-spring text">
               Resepsi
             </h4>
             <h4 className="mt-6 text-sm text-[#D6CDB5]">
