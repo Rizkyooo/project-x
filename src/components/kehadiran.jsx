@@ -103,10 +103,10 @@ export default function Kehadiran() {
 
       <div className="mt-6">
         <Card className="w-80 h-80 ">
-          <List className="h-80 overflow-scroll">
+          <List className="overflow-y-scroll">
             {ucapanList.map((ucapan, index) => (
-              <ListItem className=" border-gray-300 border-2 border-solid" key={index}>
-                <div>
+              <ListItem className=" border-gray-300 border-2 border-solid pointer-events-none" key={index}>
+                <div >
                   <Typography variant="h6" color="blue-gray">
                     {ucapan.nama} {ucapan.konfirmasi==="ya" ? "✅" : "✖️"}
                   </Typography>
@@ -114,7 +114,7 @@ export default function Kehadiran() {
                     {ucapan.ucapan}
                   </Typography>
                   <Typography variant="small" color="gray" className="text-xs">
-                    {ucapan.tanggal} {/* Tampilkan tanggal */}
+                    {ucapan.tanggal} 
                   </Typography>
                 </div>
               </ListItem>
