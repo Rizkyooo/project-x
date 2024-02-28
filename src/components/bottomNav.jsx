@@ -1,7 +1,7 @@
 'use client'
 export default function BottomNav() {
   return (
-    <div className="  sticky bottom-0 z-50 flex justify-center items-center ">
+    <div className="  sticky bottom-0 z-999 flex justify-center items-center ">
       <div className=" mb-2 w-fit p-1 rounded-xl flex items-center justify-center  gap-3 bg-white">
         <a href="#">
         <div className=" bg-[#D6CDB5] w-auto px-3 h-full rounded-xl flex justify-center items-center">

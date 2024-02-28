@@ -54,7 +54,7 @@ export default function Kehadiran() {
         Kehadiran dan Ucapan Anda Sangat Berarti Bagi Kami
       </h4>
       <Button className="flex gap-1 justify-center items-center" size="sm" color="green" onClick={handleOpen}>
-        <ClipboardDocumentCheckIcon height={20}/> Konfirmasi Kehadiran
+        <ClipboardDocumentCheckIcon className="animate-bounce" height={20}/> Konfirmasi Kehadiran
       </Button>
       <Dialog open={open} size="xs" handler={handleOpen}>
         <div className="flex items-center justify-between">
@@ -86,7 +86,8 @@ export default function Kehadiran() {
             <Textarea label="Ucapan❤️" name="ucapan" value={formData.ucapan} onChange={handleChange} />
           </div>
           <div className="flex flex-col gap-2 ">
-            <Radio size={20} name="konfirmasi" label="Ya, Saya Akan Hadir" onChange={handleChange} value="ya" />
+            
+            <Radio size={20} name="konfirmasi" label="Ya, Saya Akan Hadir" onChange={handleChange} value="ya" checked={formData.konfirmasi === "" || formData.konfirmasi === "ya"}/>
             <Radio size={20} name="konfirmasi" label="Tidak, Saya Tidak Bisa Hadir" onChange={handleChange} value="tidak" />
           </div>
         </DialogBody>
