@@ -22,60 +22,58 @@ export default function MainContent() {
   const [audio] = useState(new Audio("/images/beatuifulInWhite.mp3"));
   const [isPlaying, setIsPlaying] = useState(true);
   useEffect(() => {
-    if(isPlaying) {
-
+    if (isPlaying) {
       audio.play();
-       audio.loop = true;
+      audio.loop = true;
     }
-  }, [])
+  }, []);
   const handlePlay = () => {
     setIsPlaying(!isPlaying);
     isPlaying ? audio.pause() : audio.play();
-  }
-  const date = new Date("2025-02-29T00:00:00")
-  
+  };
+  const date = new Date("2025-02-29T00:00:00");
+
   return (
     <Fragment>
       {/*icon music*/}
-        <div className=" fixed right-0  z-50 flex  justify-end p-2">
-        <IconButton onClick={()=>handlePlay()} className="bg-[#D6CDB5]">{isPlaying ? <PauseCircleIcon className=" h-6 w-6 text-[#314361]" /> : <MusicalNoteIcon className="h-6 w-6 text-[#314361]" />}</IconButton>
-        </div>
+      <div className=" fixed right-0  z-50 flex  justify-end p-2">
+        <IconButton onClick={() => handlePlay()} className="bg-[#D6CDB5]">
+          {isPlaying ? (
+            <PauseCircleIcon className=" h-6 w-6 text-[#314361]" />
+          ) : (
+            <MusicalNoteIcon className="h-6 w-6 text-[#314361]" />
+          )}
+        </IconButton>
+      </div>
 
-  {/*container*/}
+      {/*container*/}
       <div
         className="max-w-md mx-auto bg-[#314361] min-h-screen"
         data-aos="zoom-out"
         data-aos-duration="2000"
       >
         {/*Cover*/}
-        <Covers date = {date}/>
-        
+        <Covers date={date} />
 
         {/*dalil*/}
         <Dalil></Dalil>
-        
 
         {/*pasangan*/}
         <Pasangan></Pasangan>
-        
 
         {/*Love Story*/}
         <LoveStories></LoveStories>
-        
 
         {/*Date*/}
-        <Date date = {date}></Date>
-        
+        <Date date={date}></Date>
 
         {/*Gift*/}
-        <Gift ></Gift>
-        
-        
+        <Gift></Gift>
+
         {/*footer*/}
         <Footer></Footer>
-      
 
-      {/*nav*/}
+        {/*nav*/}
         <BottomNav></BottomNav>
       </div>
     </Fragment>

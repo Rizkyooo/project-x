@@ -36,7 +36,7 @@ export default function Covers( props ) {
       <h4 data-aos="fade-right" className="mt-6 text-sm text-[#D6CDB5]">
         Kamis, 8 Oktomber 2025
       </h4>
-      <Link data-aos="fade-right" href={"/#Date"}>
+      <Link data-aos="fade-right" href={"#Date"}>
         <button className="bg-[#D6CDB5] text-[#314361] px-4 py-1 mt-4 rounded-md font-bold">
           Save The Date
         </button>

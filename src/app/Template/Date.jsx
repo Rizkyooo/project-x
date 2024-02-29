@@ -17,11 +17,13 @@ export default function Date(props) {
           Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
           serta Kerabat sekalian untuk menghadiri acara pernikahan kami pada:
         </h4>
+        <div data-aos="fade-right" className="text-[#314361] text-sm font-bold">
+        <CountDowns></CountDowns>
         {/* <Countdown
           date={date}
           renderer={rendererCountDown}
         ></Countdown> */}
-        <CountDowns></CountDowns>
+      </div>
         <h4 className="mt-4 text-md text-[#D6CDB5]">Kamis, 8 Oktomber 2025</h4>
       </div>
 
