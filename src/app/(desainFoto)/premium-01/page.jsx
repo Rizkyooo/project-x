@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import MainContent from "./mainContent";
-import Cover from "./cover";
+import Cover from "../../Template/coverDepan";
 export default function PremiumSatuDesain() {
   const [isOpen, setIsOpen] = useState(true);
   useEffect(() => {

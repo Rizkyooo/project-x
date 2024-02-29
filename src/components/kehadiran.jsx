@@ -16,8 +16,6 @@ import {
 } from "@material-tailwind/react";
 import {
   ClipboardDocumentCheckIcon,
-  XCircleIcon,
-  CheckCircleIcon,
 } from "@heroicons/react/24/solid";
 import supabase from "@/database/supabase";
 
@@ -176,7 +174,7 @@ export default function Kehadiran() {
       </Dialog>
 
       <div className="mt-6">
-        <Card className=" w-96 h-96 ">
+        <Card className=" w-[22rem] h-96 ">
           <List className="overflow-y-scroll">
             {kehadiran.map((ucapan, index) => (
               <ListItem
