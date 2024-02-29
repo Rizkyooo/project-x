@@ -21,12 +21,12 @@ import {
                 <FaceSmileIcon className="h-4 w-4 text-[#314361]"/>
               </TimelineIcon>
               <Typography className="text-[#D6CDB5]" variant="h5" color="">
-                2019
+              2019
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
               <Typography color="gary" className="text-sm text-gray-400">
-                First Time We Meet
+              First Time We Meet
               </Typography>
             </TimelineBody>
           </TimelineItem>

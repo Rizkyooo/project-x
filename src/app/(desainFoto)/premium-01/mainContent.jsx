@@ -73,7 +73,7 @@ export default function MainContent() {
           <h4 data-aos="fade-right" className="mt-6 text-sm text-[#D6CDB5]">
             Kamis, 8 Oktomber 2025
           </h4>
-          <Link data-aos="fade-right" href={"#"}>
+          <Link data-aos="fade-right" href={"/#Date"}>
             <button className="bg-[#D6CDB5] text-[#314361] px-4 py-1 mt-4 rounded-md font-bold">
               Save The Date
             </button>
@@ -120,30 +120,30 @@ export default function MainContent() {
             height={200}
           />
         </div>
-        <div className=" mt-20">
-          <p className=" mx-4 mb-4  text-xs text-[#D6CDB5] text-center">
+        <div id="Pasangan" className=" mt-20">
+          <p className=" mx-6 mb-4  text-xs text-[#D6CDB5] text-center">
             Maha suci Allah yang telah menciptakan mahluk-Nya
             berpasang-pasangan. Ya Allah rahmatilah pernikahan kami :
           </p>
-          <h4 className="mx-4  text-xl text-[#D6CDB5] text-center ">
+          <h4 className="mx-4 mt-14 text-2xl text-[#D6CDB5] text-center font-spring">
             The Wedding of
           </h4>
-          <h4 className="mt-20 mx-4  text-3xl text-[#D6CDB5] text-center font-spring">
-            Romeo
+          <h4 className="mt-14 mx-4  text-4xl text-[#D6CDB5] text-center">
+            Romeo Putra
           </h4>
-          <p className=" mt-6 mx-4  text-sm text-[#D6CDB5] text-center">
+          <p className=" mt-2 mx-4  text-sm text-[#D6CDB5] text-center">
             Putra Pertama dari
           </p>
           <p className=" mt-2 mx-4  text-sm text-[#D6CDB5] text-center">
             Bapak M. Husnaidi, S. Sos. & Ibu Sohriah
           </p>
-          <h4 className="mt-12 mx-4  text-5xl text-[#D6CDB5] text-center font-spring">
+          <h4 className="mt-9 mx-4  text-5xl text-[#D6CDB5] text-center font-spring">
             &
           </h4>
-          <h4 className="mt-20 mx-4  text-3xl text-[#D6CDB5] text-center font-spring">
+          <h4 className="mt-9 mx-4  text-4xl text-[#D6CDB5] text-center">
             Juliet
           </h4>
-          <p className=" mt-6 mx-4  text-sm text-[#D6CDB5] text-center">
+          <p className=" mt-2 mx-4  text-sm text-[#D6CDB5] text-center">
             Putra Pertama dari
           </p>
           <p className=" mt-2 mx-4  text-sm text-[#D6CDB5] text-center">
@@ -152,22 +152,22 @@ export default function MainContent() {
         </div>
 
         <div className="mt-24 flex flex-col justify-center items-center">
-          <h4 className="mx-4  text-3xl text-[#D6CDB5] text-center">
+          <h4 className="mx-4  text-2xl text-[#D6CDB5] text-center font-spring">
             Our Love Story
           </h4>
-          <div className="mt-6 ">
+          <div className="mt-9 ">
             <LoveStory></LoveStory>
           </div>
         </div>
 
-        <div className="mt-16 flex justify-center items-center flex-col">
-          <h4 className="mx-4  text-3xl text-[#D6CDB5] text-center">
+        <div id="Date" className="mt-24 flex justify-center items-center flex-col scroll-mt-9">
+          <h4 className="mx-4  text-2xl text-[#D6CDB5] text-center font-spring">
             Save The Date
           </h4>
           <div className="mt-4 flex flex-col justify-center items-center">
-            <h4 className="mx-4 text-[10px] mb-6 text-[#D6CDB5]  text-center">
+            <h4 className="mx-6 text-xs mb-6 text-[#D6CDB5]  text-center">
               Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
-              serta Kerabat sekalian untuk menghadiri acara pernikahan kami:
+              serta Kerabat sekalian untuk menghadiri acara pernikahan kami pada:
             </h4>
             <Countdown
               date={new Date("2025-02-29T00:00:00")}
@@ -214,11 +214,11 @@ export default function MainContent() {
           </div>
         </div>
 
-        <div className="mt-20 flex flex-col justify-center items-center">
+        <div id="Gift" className="mt-20 flex flex-col justify-center items-center">
           <h4 className=" mx-4 mb-2 text-3xl text-[#D6CDB5] text-center ">
             Wedding Gift
           </h4>
-          <h4 className="mt-2 mb-4 text-[10px] mx-6 text-[#D6CDB5] text-center">
+          <h4 className="mt-2 mb-6 text-xs mx-6 text-[#D6CDB5] text-center">
             Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan
             jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi
             kado secara cashless.

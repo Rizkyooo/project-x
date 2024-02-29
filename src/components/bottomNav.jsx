@@ -35,7 +35,7 @@ export default function BottomNav() {
           </svg>
         </div>
         </a>
-        <a href={'#'}>
+        <a href='#Pasangan'>
         <div className=" bg-[#D6CDB5] w-auto px-3 h-full rounded-xl flex justify-center items-center">
           <svg
             width="25"
@@ -48,7 +48,7 @@ export default function BottomNav() {
           </svg>
         </div>
         </a>
-        <a href={'#'}>
+        <a href='#Date'>
         <div className=" bg-[#D6CDB5] w-auto px-3 h-full rounded-xl flex justify-center items-center">
           <svg
             width="25"
@@ -66,7 +66,7 @@ export default function BottomNav() {
           </svg>
         </div>
         </a>
-        <a href="#">
+        <a href="#Gift">
         <div className=" bg-[#D6CDB5] w-auto px-3 h-full rounded-xl flex justify-center items-center">
           <svg
           width="25"
