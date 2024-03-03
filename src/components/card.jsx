@@ -9,16 +9,14 @@ import {
   CardFooter,
   Typography,
   Button,
-  Tooltip,
-  IconButton,
 } from "@material-tailwind/react";
 
 export function CardDesain() {
   useEffect(() => {
-    Aos.init({delay:100})
+    Aos.init({once: true});
   }, [])
   return (
-    <Card data-aos="zoom-out-right" className="w-full max-w-[26rem] shadow-2xl mb-4">
+    <Card data-aos="fade-right" className="w-full max-w-[26rem] shadow-2xl mb-4">
       <CardHeader floated={false} color="blue-gray">
         <img
           className="h-60 w-full object-cover"

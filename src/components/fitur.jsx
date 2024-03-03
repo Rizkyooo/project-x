@@ -1,16 +1,20 @@
 import Image from "next/image";
 export default function Fitur() {
   return (
-    <div id="fitur" className="min-h-screen">
+    <div id="fitur" className="h-full w-full mt-10">
       <div className=" flex justify-center ">
-        <h3 className="text-2xl font-bold text-gray-800 mr-4">
+        <h3 className="text-2xl font-bold text-gray-800 mr-4 md:text-3xl">
           Fitur Lengkap
           <hr className="border-2 border-[#967E76] mx-7 mt-1" />
         </h3>
       </div>
 
-      <div className="mt-2 mx-4">
-        <div className="shadow-md h-full w-full rounded-2xl bg-white p-4">
+      <div className="mt-2 mx-4 flex flex-col items-center">
+        <div className="flex flex-row-reverse gap-10">
+        <div className=" hidden md:block">
+            <img className="h-96 w-96 object-cover" src="https://www.youngontop.com/wp-content/uploads/2022/09/portrait-pretty-korean-girl-receive-surprising-news-looking-amazed-happy-camera-standing-blue-background_1258-76005.jpg" alt="" />
+          </div>
+        <div className="shadow-md h-full w-fit rounded-2xl bg-white p-4 px-20 border-2 flex justify-center items-start flex-col">
           <div className="flex items-center ">
             <svg
               className="h-8 w-8 text-green-500 mr-1"
@@ -181,8 +185,9 @@ export default function Fitur() {
             <p className=" text-md">Dan lain-lain</p>
           </div>
         </div>
+        </div>
         <div className="p-4 mt-4">
-            <div className="grid grid-cols-3">
+            <div className="w-screen  flex justify-center items-center gap-20">
                 <div className="flex flex-col justify-center items-center">
                 <Image height={80} width={80} src="/images/mudah.png"></Image>
                 <h5 className="text-xl font-bold">Mudah</h5>

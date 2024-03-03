@@ -1,15 +1,9 @@
 import { Button } from "@material-tailwind/react";
-import Aos from "aos";
 import "aos/dist/aos.css";
 import { useSearchParams } from "next/navigation";
-import { useEffect } from "react";
 import { Suspense } from "react"; // Import Suspense
 
 export default function Cover({ toggleOpen }) {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
   return (
     <Suspense fallback={<div>Loading...</div>}>
       {" "}

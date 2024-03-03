@@ -9,7 +9,7 @@ export default function Covers( props ) {
       style={{ backgroundImage: `url('/images/desain01bg.png')` }}
       className=" p-20 bg-center flex items-center justify-center flex-col"
     >
-      <h4 data-aos="fade-right" className=" mb-16 text-[#D6CDB5]">
+      <h4 data-aos="fade-right"  className=" mb-16 text-[#D6CDB5]">
         The Wedding of
       </h4>
       <div

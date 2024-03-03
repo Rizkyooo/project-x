@@ -1,19 +1,11 @@
-import Link from "next/link";
-import Countdown from "react-countdown";
-import Image from "next/image";
+
 import { Fragment, useEffect, useState } from "react";
-import { LoveStory } from "@/components/loveStory";
-import { WeddingGift } from "@/components/weddingGift";
-import Kehadiran from "@/components/kehadiran";
-import Maps from "@/components/maps";
-import { Typography, IconButton } from "@material-tailwind/react";
+import { IconButton } from "@material-tailwind/react";
 import { MusicalNoteIcon, PauseCircleIcon } from "@heroicons/react/24/solid";
-import { rendererCountDown } from "@/app/Template/countDown";
 import Covers from "@/app/Template/covers";
 import Date from "@/app/Template/Date";
 import Pasangan from "@/app/Template/Pasangan";
 import LoveStories from "@/app/Template/loveStories";
-import Music from "@/app/Template/music";
 import Gift from "@/app/Template/gift";
 import Footer from "@/app/Template/footer";
 import BottomNav from "@/app/Template/bottomNav";
@@ -56,7 +48,9 @@ export default function MainContent() {
         <Covers date={date} />
 
         {/*dalil*/}
+        <div data-aos="fade-up" data-aos-duration="1000">
         <Dalil></Dalil>
+        </div>
 
         {/*pasangan*/}
         <Pasangan></Pasangan>

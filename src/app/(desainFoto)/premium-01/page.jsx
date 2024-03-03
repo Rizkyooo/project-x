@@ -8,7 +8,7 @@ import Cover from "../../Template/coverDepan";
 export default function PremiumSatuDesain() {
   const [isOpen, setIsOpen] = useState(true);
   useEffect(() => {
-    Aos.init({duration:1000})
+    Aos.init({duration:1000, once: false});
   }, [])
 
   const toggleOpen = () => {

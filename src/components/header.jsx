@@ -1,94 +1,105 @@
 'use client'
-import { useState } from 'react';
-import Link from 'next/link';
-
-export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+import {
+  Navbar,
+  Collapse,
+  Typography,
+  IconButton,
+} from "@material-tailwind/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+ 
+function NavList() {
   return (
-    <header className="sticky top-0 z-50">
-      <nav className="bg-white border-gray-200 md:p-4 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="/images/logoo.png"
-              className="h-8"
-              alt="NikahanKita Logo"
-            />
-          </a>
-          <button
-            onClick={toggleMenu}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-[#967E76] focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600"
-            aria-controls="navbar-default"
-            aria-expanded={isOpen ? "true" : "false"}
-          >
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div
-            className={`${
-              isOpen ? "block" : "hidden"
-            } w-full md:block md:w-auto`}
-            id="navbar-default"
-          >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white md:text-xl ">
-              <li>
-                <a
-                  href="/"
-                  className="block py-2 px-3  hover:bg-[#967E76] rounded md:bg-transparent md:text-[#967E76] md:p-0 md:hover:bg-white "
-                  aria-current="page"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <Link
-                  href="/#templateDesain"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-[#967E76] md:hover:bg-transparent md:border-0 md:hover:text-[#967E76] md:p-0"
-                >
-                  Desain/Template
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#fitur"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-[#967E76] md:hover:bg-transparent md:border-0 md:hover:text-[#967E76] md:p-0"
-                >
-                  Fitur
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-[#967E76] md:hover:bg-transparent md:border-0  md:hover:text-[#967E76] md:p-0"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+          Pages
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+          Account
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+          Blocks
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+          Docs
+        </a>
+      </Typography>
+    </ul>
+  );
+}
+ 
+export default function Header() {
+  const [openNav, setOpenNav] = useState(false);
+ 
+  const handleWindowResize = () =>
+    window.innerWidth >= 960 && setOpenNav(false);
+ 
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+ 
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+ 
+  return (
+    <Navbar className=" rounded-none sticky top-0 z-10 mx-auto w-full py-3">
+      <div className="flex items-center justify-between text-blue-gray-900">
+        <Typography
+          as="a"
+          href="#"
+          variant="h6"
+          className="mr-4 cursor-pointer py-1.5"
+        >
+          <Image src="/images/logoo.png" alt="" height={130} width={130}/>
+        </Typography>
+        <div className="hidden lg:block">
+          <NavList />
         </div>
-      </nav>
-    </header>
+        <IconButton
+          variant="text"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          ripple={false}
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {openNav ? (
+            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+          ) : (
+            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+          )}
+        </IconButton>
+      </div>
+      <Collapse open={openNav}>
+        <NavList />
+      </Collapse>
+    </Navbar>
   );
 }
