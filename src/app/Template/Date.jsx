@@ -1,6 +1,4 @@
 import Maps from "@/components/maps";
-import Countdown from "react-countdown";
-import rendererCountDown from "./countDown";
 import CountDowns from "./countDowns";
 export default function Date(props) {
     const {date} = props
@@ -17,17 +15,13 @@ export default function Date(props) {
           Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
           serta Kerabat sekalian untuk menghadiri acara pernikahan kami pada:
         </h4>
-        <div data-aos="fade-right" className="text-[#314361] text-sm font-bold">
+        <div  className="text-[#314361] text-sm font-bold">
         <CountDowns></CountDowns>
-        {/* <Countdown
-          date={date}
-          renderer={rendererCountDown}
-        ></Countdown> */}
       </div>
         <h4 className="mt-4 text-md text-[#D6CDB5]">Kamis, 8 Oktomber 2025</h4>
       </div>
 
-      <div className="mt-16 flex justify-center items-center flex-col">
+      <div data-aos="fade-right" className="mt-16 flex justify-center items-center flex-col">
         <h4 className=" mx-4 text-3xl text-[#D6CDB5] text-center font-spring text">
           Akad
         </h4>
@@ -41,7 +35,7 @@ export default function Date(props) {
         </h4>
       </div>
 
-      <div className="mt-16 flex justify-center items-center flex-col">
+      <div data-aos="fade-right" className="mt-16 flex justify-center items-center flex-col">
         <h4 className=" mx-4 text-3xl text-[#D6CDB5] text-center font-spring text">
           Resepsi
         </h4>
@@ -54,7 +48,7 @@ export default function Date(props) {
           Jakarta Pusat, Daerah Khusus Ibukota Jakarta, Indonesia
         </h4>
       </div>
-      <div className="mt-9">
+      <div data-aos="zoom-in" data-aos-duration="1500" className="mt-9">
         <Maps></Maps>
       </div>
     </div>

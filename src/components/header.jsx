@@ -71,7 +71,7 @@ export default function Header() {
   }, []);
  
   return (
-    <Navbar className=" rounded-none sticky top-0 z-10 mx-auto w-full py-3">
+    <Navbar className=" rounded-none sticky top-0 z-10 mx-auto w-full py-3 ">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"

@@ -6,7 +6,7 @@ import Header from "@/components/header";
 export default function Home() {
   
   return (
-    <main>
+    <main className="">
       <Header></Header>
       <Hero></Hero>
       <Fitur></Fitur>

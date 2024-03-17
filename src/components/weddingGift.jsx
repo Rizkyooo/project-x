@@ -34,7 +34,7 @@ export function WeddingGift() {
   return (
     <>
       <Button className="flex justify-center items-center gap-1 bg-[#D6CDB5] text-[#314361]" size="sm" onClick={handleOpen}><GiftIcon className="text-[#314361] animate-bounce" height={20}/>Beri Hadiah</Button>
-      <Dialog size="xs" open={open} handler={handleOpen}>
+      <Dialog  size="xs" open={open} handler={handleOpen} >
         <DialogHeader className="justify-between">
           <div>
             <Typography variant="h5" color="blue-gray">
@@ -66,7 +66,7 @@ export function WeddingGift() {
             </svg>
           </IconButton>
         </DialogHeader>
-        <DialogBody className="overflow-y-scroll !px-5">
+        <DialogBody className="overflow-y-scroll max-h-screen !px-5">
           <div className="mb-6">
             <Typography
               variant="paragraph"

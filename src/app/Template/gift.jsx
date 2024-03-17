@@ -12,7 +12,7 @@ export default function Gift() {
         cashless.
       </h4>
       <WeddingGift></WeddingGift>
-      <div className="flex justify-center items-center mt-20">
+      <div data-aos="fade-up" className="flex justify-center items-center mt-20">
         <Kehadiran></Kehadiran>
       </div>
     </div>

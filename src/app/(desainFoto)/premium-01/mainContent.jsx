@@ -53,19 +53,30 @@ export default function MainContent() {
         </div>
 
         {/*pasangan*/}
+        <div data-aos="fade-right">
         <Pasangan></Pasangan>
+        </div>
 
         {/*Love Story*/}
+        <div data-aos="fade-up">
         <LoveStories></LoveStories>
+        </div>
 
         {/*Date*/}
+        <div data-aos="fade-up">
+
         <Date date={date}></Date>
+        </div>
 
         {/*Gift*/}
+        <div data-aos="fade-up">
         <Gift></Gift>
+        </div>
 
         {/*footer*/}
+        <div data-aos="fade-right">
         <Footer></Footer>
+        </div>
 
         {/*nav*/}
         <BottomNav></BottomNav>
