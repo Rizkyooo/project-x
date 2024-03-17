@@ -7,7 +7,6 @@ import {
   IconButton,
   Typography,
   MenuItem,
-  Alert
 } from "@material-tailwind/react";
 import { GiftIcon, CheckIcon, DocumentDuplicateIcon } from "@heroicons/react/24/solid";
 

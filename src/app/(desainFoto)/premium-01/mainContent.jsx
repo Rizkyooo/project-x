@@ -10,6 +10,7 @@ import Gift from "@/app/Template/gift";
 import Footer from "@/app/Template/footer";
 import BottomNav from "@/app/Template/bottomNav";
 import Dalil from "@/app/Template/dalil";
+import { Gallery } from "@/app/Template/gallery";
 export default function MainContent() {
   const [audio] = useState(new Audio("/images/beatuifulInWhite.mp3"));
   const [isPlaying, setIsPlaying] = useState(true);
@@ -77,6 +78,7 @@ export default function MainContent() {
         <div data-aos="fade-right">
         <Footer></Footer>
         </div>
+        <Gallery></Gallery>
 
         {/*nav*/}
         <BottomNav></BottomNav>
